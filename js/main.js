@@ -28,11 +28,14 @@ var height = $('.container').height();
 var x, y, flag, note;
 
 $(document).on('ready', function() {
+
   $('.container').on('click', setFlag)
+  
   $(window).on('resize', function() {
   	width = $('.container').width();
   	height = $('.container').height();
   })
+
   $(document).on('click', '.note button', function() {
   	console.log($(this).closest('.note').find('textarea'));
   	messages.push($(this).closest('.note').find('textarea').val());
