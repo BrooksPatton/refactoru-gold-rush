@@ -17,3 +17,26 @@ body {
 	background: red;
 	margin: -5px 0 0 -5px;
 }
+
+.note {
+	background: #eee;
+	left: 50%;
+	margin: -50px auto auto -150px;
+	padding: 20px;
+	position: fixed;
+	text-align: right;
+	top: 50%;
+	width: 300px;
+	z-index: 1
+}
+
+.note textarea {
+	box-sizing: border-box;
+	margin: 0 20px;
+	padding: 10px;
+	width: 260px;
+}
+
+.note button {
+	margin: 10px 20px 0 0;
+}
