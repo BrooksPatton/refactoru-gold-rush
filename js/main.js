@@ -21,6 +21,7 @@ var setFlag = function setFlag(event) {
 	}
 }
 
+// added this line to test git push
 var messages= [];
 var flagIndex = 0;
 var width = $('.container').width();
@@ -30,7 +31,7 @@ var x, y, flag, note;
 $(document).on('ready', function() {
 
   $('.container').on('click', setFlag)
-  
+
   $(window).on('resize', function() {
   	width = $('.container').width();
   	height = $('.container').height();
