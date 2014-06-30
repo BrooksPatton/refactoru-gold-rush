@@ -1,5 +1,9 @@
 /* sdfjafdjasdfhjlfdsahasd */
+html {
+	height: 100%;
+}
 body {
+	height: 100%;
 	margin: 0
 }
 
@@ -52,4 +56,8 @@ p {
 	padding: 5px 20px;
 	max-width: 200px;
 	word-break: break-all;
+}
+
+.main-canvas {
+	height: 100%;
 }
