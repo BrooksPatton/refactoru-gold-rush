@@ -2,14 +2,20 @@
 var setFlag = function(event) {
 	x = ((event.pageX)/width)*100;
 	y = ((event.pageY)/height)*100;
-	console.log(x,y)
 	var flag = $('<div>');
 	flag.addClass('marker');
 	flag.css({
 		top: y + '%',
 		left: x + '%'
 	});
-	$('.container').append(flag);
+	if( $(event.target).hasClass('marker') ) {
+		$(event.target).remove();
+	}
+	else {
+		$(this).append(flag);
+	}
+
+
 }
 
 var width = $('.container').width();
@@ -22,4 +28,5 @@ $(document).on('ready', function() {
   	width = $('.container').width();
   	height = $('.container').height();
   })
+
 });
